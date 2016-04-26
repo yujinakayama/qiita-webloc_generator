@@ -1,4 +1,4 @@
-require "qiita/webloc_generator/version"
+require 'qiita/webloc_generator/version'
 
 module Qiita
   module WeblocGenerator

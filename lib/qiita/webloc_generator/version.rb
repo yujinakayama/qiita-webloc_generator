@@ -1,5 +1,5 @@
 module Qiita
-  module WeblocGenerator
+  class WeblocGenerator
     VERSION = '0.1.0'.freeze
   end
 end

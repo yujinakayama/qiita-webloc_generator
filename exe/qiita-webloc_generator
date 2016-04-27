@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+
+$LOAD_PATH.unshift(File.expand_path('../../lib', __FILE__))
+require 'qiita/webloc_generator'
+
+unless ARGV.size == 2
+  program_name = File.basename($0)
+  puts "Usage: #{program_name} TEAM_NAME ACCESS_TOKEN"
+  exit 1
+end
+
+generator = Qiita::WeblocGenerator.new(team: ARGV[0], access_token: ARGV[1])
+generator.generate
